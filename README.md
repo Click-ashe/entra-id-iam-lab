@@ -26,7 +26,14 @@ Tenant: clickashiam (Auth0)
 - MFA is not just an extra step, it is what stops password attacks
 - Setting up a lab is harder than the actual IAM work sometimes
 
-## Next Day 2 
+## Day 2 
+  On day 2 I was working on my LAB that 
+- Changed password for test users and tested login - SUCCESS
+- Created roles: Finance-User, IT-Admin
+- Assigned Finance-User to finance test user, IT-Admin to IT test user using an Asign User 
+- Tested Username-Password-Authentication connection - Successful transaction
+- Learned: A successful login means authentication works, roles control what the user can access after
+
 Keep going for myself God is always with me 
 
 - Create roles and assign them to users

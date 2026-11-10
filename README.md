@@ -1,11 +1,34 @@
-# IAM Lab — SC-300 + Auth0 Portfolio
-Day 1 DONE ✅ - 90-Day Mentor Plan
+# IAM Lab
 
-Lab: Auth0 Developer Tenant - clickashiam
-【entity-GitHub¦canonical_name=GitHub】: click_ashe
+I'm learning Identity and Access Management (IAM) and preparing for SC-300.
 
-## Day 1 Log
-- Created Auth0 tenant: clickashiam
-- Created 2 test users: test.finance@clickashiam.com, test.it@clickashiam.com
-- Enabled MFA
-- Created GitHub repo: click_ashe/entra-id-iam-lab
+I started this repo to document what I'm building, not just what I'm watching.
+
+## Lab Setup
+
+I tried to set up a Microsoft 365 E5 developer tenant first, but it asked for a corporate email which I don't have. Same with Okta. so I start researching Googleing and found another options. 
+
+So I started with Auth0 instead. It lets me sign up with Gmail and practice the same IAM concepts: users, roles, MFA, and SSO.
+
+Tenant: clickashiam (Auth0)
+
+## What I Did - Day 1
+
+- Created Auth0 tenant
+- Created 2 test users:
+    - test.finance@clickashiam.com
+    - test.it@clickashiam.com
+- Turned on MFA
+
+## What I Learned
+
+- How to create users in an identity platform
+- MFA is not just an extra step, it is what stops password attacks
+- Setting up a lab is harder than the actual IAM work sometimes
+
+## Next Day 2 
+Keep going for myself God is always with me 
+
+- Create roles and assign them to users
+- Connect an app with SSO
+- Later, practice the same things in Microsoft Entra using 【entity-Microsoft Learn¦canonical_name=Microsoft Learn】 sandbox

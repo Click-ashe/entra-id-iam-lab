@@ -34,6 +34,12 @@ Tenant: clickashiam (Auth0)
 - Tested Username-Password-Authentication connection - Successful transaction
 - Learned: A successful login means authentication works, roles control what the user can access after
 
+## Day 3
+- Deleted duplicate apps and created 1 clean app: Finance-App-Test
+- Turned ON Username-Password-Authentication connection for the app
+- Tested login through app with finance user - Successful transaction
+- Learned: SSO means one login gives access to an app. Duplicate apps cause confusion, cleaning them up is part of IAM governance.
+
 Keep going for myself God is always with me 
 
 - Create roles and assign them to users

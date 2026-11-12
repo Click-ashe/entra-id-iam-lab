@@ -39,6 +39,7 @@ Tenant: clickashiam (Auth0)
 - Turned ON Username-Password-Authentication connection for the app
 - Tested login through app with finance user - Successful transaction
 - Learned: SSO means one login gives access to an app. Duplicate apps cause confusion, cleaning them up is part of IAM governance.
+- ![Day 3 - Successful Login Test](Day3-Successful-Login.png)
 
 Keep going for myself God is always with me 
 

@@ -41,8 +41,16 @@ Tenant: clickashiam (Auth0)
 - Learned: SSO means one login gives access to an app. Duplicate apps cause confusion, cleaning them up is part of IAM governance.
 - ![Day 3 - Successful Login Test](Day3-Successful-Login.png)
 
-Keep going for myself God is always with me 
+
 
 - Create roles and assign them to users
 - Connect an app with SSO
 - Later, practice the same things in Microsoft Entra using 【entity-Microsoft Learn¦canonical_name=Microsoft Learn】 sandbox
+
+## Day 4
+- Tested login as test.it@clickashiam.com - Successful transaction
+- Created new user test.norole@clickashiam.com with NO role on purpose
+- Tested login for no-role user - Login still succeeded
+- Learned: Authentication is proving who you are. Authorization is what you can access. A user can login but still have no access if they have no role.
+
+Keep going for myself God is always with me 

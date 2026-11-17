@@ -53,11 +53,17 @@ Tenant: clickashiam (Auth0)
 - Tested login for no-role user - Login still succeeded
 - Learned: Authentication is proving who you are. Authorization is what you can access. A user can login but still have no access if they have no role.
 
-## Day 5
+## Day 5 
+Today I Did a lot in day 5 adding, removing and assigning Roles 
 - Removed Finance-User role from test.finance user (Mover - left Finance team)
 - Assigned IT-Admin role to test.finance user (Mover - joined IT team)
 - Assigned Finance-User role to test.norole user (Joiner - now has access)
 - Learned: When someone moves team, you must REMOVE old role AND ADD new role. If you only add, they keep old access - that is a security risk. This is Joiner-Mover-Leaver.
 
+## Day 5
+- I Removed Finance-User role from test.finance user (Mover - left Finance team)
+- Assigned IT-Admin role to test.finance user (Mover - joined IT team)
+- Assigned Finance-User role to test.norole user (Joiner - now has access)
+- I have Learned: When someone moves team, you must REMOVE old role AND ADD new role. If you only add, they keep old access - that is a security risk. This is Joiner-Mover-Leaver.
 
 Keep going for myself God is always with me 

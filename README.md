@@ -1,3 +1,28 @@
+# IAM Lab - Joiner-Mover-Leaver | SC-300 + Auth0
+
+**Tenant:** clickashiam (Auth0) | **【entity-GitHub¦canonical_name=GitHub】:** click_ashe/entra-id-iam-lab
+
+## Project 1 - What I Built
+I built a Joiner-Mover-Leaver (JML) lab in Auth0 to prove I can manage the full user lifecycle.
+
+| Step | What I Did | Proof |
+|---|---|---|
+| Joiner | Created users, assigned Finance-User / IT-Admin roles | Day 2 + Day 4 |
+| Mover | Removed old role + Added new role when user changed team | Day 5 |
+| Leaver | Blocked user (IT-Admin)- login failed even with correct password | Day 6 |
+
+## Proof Screenshots
+![Day 3 - Successful Login Test](Day3-Successful-Login.png)
+![Day 6 - Blocked User Test](Day6-User-Blocked.png)
+
+## What I Learned from Day 1 to 6 
+- Authentication = proving who you are (login + MFA) answering WHO
+- Authorization = what you can access after login (Roles) answering WHAT
+- RBAC = Role-Based Access Control
+- JML = Joiner gets access, Mover changes access, Leaver loses access
+
+---
+## My Daily Log Below
 # IAM Lab
 
 I'm learning Identity and Access Management (IAM) and preparing for SC-300.
@@ -12,7 +37,7 @@ So I started with Auth0 instead. It lets me sign up with Gmail and practice the 
 
 Tenant: clickashiam (Auth0)
 
-## What I Did - Day 1
+## Day 1
 
 - Created Auth0 tenant
 - Created 2 test users:

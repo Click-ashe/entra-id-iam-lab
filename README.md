@@ -66,4 +66,18 @@ Today I Did a lot in day 5 adding, removing and assigning Roles
 - Assigned Finance-User role to test.norole user (Joiner - now has access)
 - I have Learned: When someone moves team, you must REMOVE old role AND ADD new role. If you only add, they keep old access - that is a security risk. This is Joiner-Mover-Leaver.
 
+## Day 6 - Leaver Test: Disable a User
+
+Step 1: Blocked test.finance@clickashiam.com in Auth0 (Actions > Block User).
+Step 2: Tried to login as blocked user - login FAILED with user is blocked.
+Step 3: Unblocked user again for lab practice.
+
+What I learned:
+Leaver = When someone leaves, block/disable first, don't just remove role.
+Blocked user cannot login even with correct password.
+Delete is last step, after 30-90 days. Block is first.
+
+![Day 6 - Blocked User Test](Day6-User-Blocked.png)
+
+
 Keep going for myself God is always with me 

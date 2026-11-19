@@ -104,5 +104,18 @@ Delete is last step, after 30-90 days. Block is first.
 
 ![Day 6 - Blocked User Test](Day6-User-Blocked.png)
 
+## Day 8 - Project 2 Start: MFA + Password Policy
 
+Step 1: Password Policy - In new Auth0 dashboard, Password Policy page is no longer in Database > Settings. Tenant uses default Good policy. I proved it by trying weak password 12345 for test.weak - BLOCKED, user not created.
+Step 2: Brute-Force Protection - Improved brute force protection is ON (green toggle).
+Step 3: MFA - Had to turn ON One-time Password factor FIRST, then set Policy to Always. Auth0 said "at least one factor must be turned on" until I did factor first. Then enrolled test.it with Authenticator app, entered code, login said Successful transaction.
+Step 4: Security lesson - I shared MFA QR by mistake, so I reset MFA for test.it after test. If a secret is shared, reset it.
+
+What I learned:
+Password Policy stops weak passwords before they are created.
+MFA stops login even if password is stolen.
+Brute-Force Protection stops attackers trying 1000 passwords.
+
+![Day 8 - MFA Success](Day8-MFA-Success.png)
+![Day 8 - Brute Force ON](Day8-Brute-Force-ON.png)
 Keep going for myself God is always with me 

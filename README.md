@@ -4,8 +4,7 @@
 **Tenant:** clickashiam (Auth0) | **【entity-GitHub¦canonical_name=GitHub】:** click_ashe/entra-id-iam-lab
 
 ## Project 1 - Joiner-Mover-Leaver - COMPLETE ✅
-## Project 2 - MFA + Password Policy + Access Review - IN PROGRESS
-
+## Project 2 - MFA + Password Policy + Access Review - COMPLETE ✅
 
 ## Project 1 - What I Built
 I built a Joiner-Mover-Leaver (JML) lab in Auth0 to prove I can manage the full user lifecycle.
@@ -151,9 +150,9 @@ Finding: test.it had 2 roles, could access both IT App and Finance App. Violates
 Fix: Removed Finance-User from test.it. Verified only IT-Admin remains.
 
 MFA Check:
-test.it: Enrolled ✅
-test.finance: Not enrolled yet - will enroll on next login
-test.norole: Not enrolled yet - will enroll on next login
+All 3 users show "MFA is enabled for this user" - Policy Always is working.
+test.it enrolled yesterday and proved login works, then MFA was reset for security.
+All 3 will be asked to enroll on next login.
 
 Logs: Checked Monitoring > Logs - saw failed weak password test + successful MFA login.
 
@@ -167,5 +166,6 @@ PROJECT 2 COMPLETE: MFA + Password Policy + Access Review
 ![Day 9 - Finding](Day9-Access-Review-Finding.png)
 ![Day 9 - Fixed](Day9-Access-Review-Fixed.png)
 ![Day 9 - Logs](Day9-Logs-Review.png)
+
 
 Keep going for myself God is always with me 

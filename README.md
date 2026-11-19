@@ -1,6 +1,11 @@
+# My IAM Lab - Auth0 + SC-300
 # IAM Lab - Joiner-Mover-Leaver | SC-300 + Auth0
 
 **Tenant:** clickashiam (Auth0) | **【entity-GitHub¦canonical_name=GitHub】:** click_ashe/entra-id-iam-lab
+
+## Project 1 - Joiner-Mover-Leaver - COMPLETE ✅
+## Project 2 - MFA + Password Policy + Access Review - IN PROGRESS
+
 
 ## Project 1 - What I Built
 I built a Joiner-Mover-Leaver (JML) lab in Auth0 to prove I can manage the full user lifecycle.
@@ -104,6 +109,19 @@ Delete is last step, after 30-90 days. Block is first.
 
 ![Day 6 - Blocked User Test](Day6-User-Blocked.png)
 
+## Day 7 - Project 1 Wrap-Up
+
+Added About description: IAM Lab - Joiner-Mover-Leaver with Auth0 | SC-300 Hands-On Project 1
+Reorganized README top: Title + JML Table + Proof Screenshots + What I Learned. Kept Day 1-6 notes below.
+Cleaned GitHub: Only IAM public, rest private, pinned entra-id-iam-lab. Fixed profile bio to IAM Analyst, not software engineering.
+Cleaned LinkedIn: Headline + About + Featured = IAM. Posted Project 1 on LinkedIn.
+
+What I learned:
+Recruiters read top 10 seconds. Summary on top, diary below.
+
+PROJECT 1 COMPLETE: Joiner-Mover-Leaver Lab
+
+
 ## Day 8 - Project 2 Start: MFA + Password Policy
 
 Step 1: Password Policy - In new Auth0 dashboard, Password Policy page is no longer in Database > Settings. Tenant uses default Good policy. I proved it by trying weak password 12345 for test.weak - BLOCKED, user not created.
@@ -118,4 +136,36 @@ Brute-Force Protection stops attackers trying 1000 passwords.
 
 ![Day 8 - MFA Success](Day8-MFA-Success.png)
 ![Day 8 - Brute Force ON](Day8-Brute-Force-ON.png)
+
+## Day 9 - Project 2 Finish: Access Review
+
+Access Review - Checked all users:
+
+| User | Roles BEFORE | Finding | AFTER Fix |
+|---|---|---|---|
+| test.finance@clickashiam.com | IT-Admin | OK | IT-Admin |
+| test.it@clickashiam.com | IT-Admin + Finance-User | EXTRA ACCESS - IT should not have Finance | IT-Admin ONLY |
+| test.norole@clickashiam.com | Finance-User | OK | Finance-User |
+
+Finding: test.it had 2 roles, could access both IT App and Finance App. Violates Least Privilege.
+Fix: Removed Finance-User from test.it. Verified only IT-Admin remains.
+
+MFA Check:
+test.it: Enrolled ✅
+test.finance: Not enrolled yet - will enroll on next login
+test.norole: Not enrolled yet - will enroll on next login
+
+Logs: Checked Monitoring > Logs - saw failed weak password test + successful MFA login.
+
+What I learned:
+Access Review = Check who has what access, remove what they don't need.
+Least Privilege = Give only the access needed for the job, nothing extra.
+Finding extra access is GOOD - that is the job.
+
+PROJECT 2 COMPLETE: MFA + Password Policy + Access Review
+
+![Day 9 - Finding](Day9-Access-Review-Finding.png)
+![Day 9 - Fixed](Day9-Access-Review-Fixed.png)
+![Day 9 - Logs](Day9-Logs-Review.png)
+
 Keep going for myself God is always with me 

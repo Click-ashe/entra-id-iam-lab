@@ -5,6 +5,7 @@
 
 ## Project 1 - Joiner-Mover-Leaver - COMPLETE ✅
 ## Project 2 - MFA + Password Policy + Access Review - COMPLETE ✅
+## Project 3 - Secure App Onboarding + Separation of Duties - IN PROGRESS
 
 ## Project 1 - What I Built
 I built a Joiner-Mover-Leaver (JML) lab in Auth0 to prove I can manage the full user lifecycle.
@@ -167,5 +168,24 @@ PROJECT 2 COMPLETE: MFA + Password Policy + Access Review
 ![Day 9 - Fixed](Day9-Access-Review-Fixed.png)
 ![Day 9 - Logs](Day9-Logs-Review.png)
 
+## Day 10 - Project 3 Start: Secure App Onboarding + Separation of Duties
+
+Created new app: HR-App-Test (Single Page Web App, Username-Password-Authentication ON)
+Created new role: HR-User - Can access HR App
+Created new user: test.hr@clickashiam.com - Assigned HR-User only
+
+Separation of Duties Test:
+Gave test.hr a second role Finance-User on purpose = SoD Violation - HR should not have Finance.
+Fix: Removed Finance-User. Verified test.hr = HR-User only.
+
+What I learned:
+App Onboarding = Create app + Create role + Assign role to right users only.
+Separation of Duties = One person should not have 2 conflicting roles that let them approve their own request.
+Auth0 does not auto-block SoD in free tier - IAM Analyst must catch it in review.
+
+PROJECT 3 IN PROGRESS
+
+![Day 10 - HR User](Day10-HR-User-Role.png)
+![Day 10 - SoD Fixed](Day10-SoD-Fixed.png)
 
 Keep going for myself God is always with me 
